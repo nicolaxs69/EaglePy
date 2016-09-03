@@ -11,7 +11,7 @@ import select
 
 import cv2
 
-import hardware
+#import hardware
 import config
 import face
 
@@ -31,7 +31,7 @@ def is_letter_input(letter):
 
 if __name__ == '__main__':
 	camera = config.get_camera()
-	box = hardware.Box()
+	#box = hardware.Box()
 	# Create the directory for positive training images if it doesn't exist.
 	if not os.path.exists(config.POSITIVE_DIR):
 		os.makedirs(config.POSITIVE_DIR)
@@ -48,7 +48,8 @@ if __name__ == '__main__':
 	print 'Press Ctrl-C to quit.'
 	while True:
 		# Check if button was pressed or 'c' was received, then capture image.
-		if box.is_button_up() or is_letter_input('c'):
+		
+		if is_letter_input('c'):
 			print 'Capturing image...'
 			image = camera.read()
 			# Convert image to grayscale.
