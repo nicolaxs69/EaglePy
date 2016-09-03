@@ -16,7 +16,6 @@ if __name__ == '__main__':
     # Initialize camer and box.
     camera = config.get_camera()
 
-while True:
     print 'Box is now locked.'
 else:
     print 'Button pressed, looking for face...'
@@ -29,7 +28,7 @@ else:
     if result is None:
         print 'Could not detect single face!  Check the image in capture.pgm' \
               ' to see what was captured and try again with only one face visible.'
-        continue
+
     x, y, w, h = result
     # Crop and resize image to face.
     crop = face.resize(face.crop(image, x, y, w, h))
