@@ -32,7 +32,6 @@ import cv2
 #cy = 120
 
 #os.system( "echo 0=150 > /dev/servoblaster" )
-#os.system( "echo 1=150 > /dev/servoblaster" )
 
 #xdeg = 150
 #ydeg = 150
@@ -72,19 +71,19 @@ for frame in camera.capture_continuous( rawCapture, format="bgr", use_video_port
         tx = x + w/2
         ty = y + h/2
 
-        if   ( cx - tx >  10 and xdeg <= 190 ):
-            xdeg += 3
-            os.system( "echo 0=" + str( xdeg ) + " > /dev/servoblaster" )
-        elif ( cx - tx < -10 and xdeg >= 110 ):
-            xdeg -= 3
-            os.system( "echo 0=" + str( xdeg ) + " > /dev/servoblaster" )
+     #   if   ( cx - tx >  10 and xdeg <= 190 ):
+     #      xdeg += 3
+     #       os.system( "echo 0=" + str( xdeg ) + " > /dev/servoblaster" )
+     #   elif ( cx - tx < -10 and xdeg >= 110 ):
+     #       xdeg -= 3
+     #       os.system( "echo 0=" + str( xdeg ) + " > /dev/servoblaster" )
         
-        if   ( cy - ty >  10 and ydeg >= 110 ):
-            ydeg -= 3
-            os.system( "echo 1=" + str( ydeg ) + " > /dev/servoblaster" )
-        elif ( cy - ty < -10 and ydeg <= 190 ):
-            ydeg += 3
-            os.system( "echo 1=" + str( ydeg ) + " > /dev/servoblaster" )
+     #   if   ( cy - ty >  10 and ydeg >= 110 ):
+     #       ydeg -= 3
+     #       os.system( "echo 1=" + str( ydeg ) + " > /dev/servoblaster" )
+     #   elif ( cy - ty < -10 and ydeg <= 190 ):
+     #       ydeg += 3
+     #       os.system( "echo 1=" + str( ydeg ) + " > /dev/servoblaster" )
 
     # Calculate and show the FPS
     fps = fps + 1
