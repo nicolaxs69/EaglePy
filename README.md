@@ -3,7 +3,7 @@ Desarrollo de EaglePy, un sistema de seguridad de reconocimiento facial basado e
 Youtube video : https://www.youtube.com/watch?v=VMDKHpIT4ds&feature=youtu.be
 
 
-![alt text](https://drive.google.com/file/d/0B7lkx_4lJJi2TVpMNFlsdWdFU3M/view?usp=sharing)
+![arquitectura software](https://user-images.githubusercontent.com/14321326/27209161-c02ef422-520f-11e7-962d-67553d4e059c.jpg)
 
 
 +
