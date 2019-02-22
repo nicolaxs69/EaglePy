@@ -1,6 +1,5 @@
 # EaglePy
-Desarrollo de EaglePy, un sistema de seguridad de reconocimiento facial basado en Raspberry Py. 
-Youtube video : https://www.youtube.com/watch?v=VMDKHpIT4ds&feature=youtu.be
+Development of 'Eagle', a security system of facial recognition based on Raspberry Py. 3 Youtube video : https://www.youtube.com/watch?v=VMDKHpIT4ds&feature=youtu.be
 
 
 # How it Works?
